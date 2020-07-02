@@ -1,6 +1,8 @@
 # jolang
-Python program to compile jolang to javascript
 
+**jolang** adds syntactic sugar to your p5 sketches. It extends JavaScript and p5's langugae to make it less forgiving, more emotional, and even painful to write creative programs. Extremly polite expressions act as intuitive replacements for common JavaScript keywords, operators, and p5's most popular methods. You can continue to use raw JavaScript inside jolang, and the `jolang` transpiler will convert your code into raw JavaScript.
+
+## jolang
 ```
 Imagine angle;
 Remember radius is 300.0;
@@ -14,14 +16,28 @@ Dear computer, please animate: {
   Fill the background with (0);
   Remember x is cosinus of (angle) times radius;
   Remember y is sinus of (angle) times radius;
+}
+```
+## JavaScript
+```javascript
+// transpiled from jolang
+let angle;
+const radius = 300.0;
 
+function setup () {
+  createCanavs (800, 800);
+  angle = 0.0;
+}
+
+function draw () {
+  background (0);
+  const x = cos(angle) * radius;
+  const y = sin(angle) * radius;
 }
 
 ```
 
-jolang adds syntactic sugar to your p5 sketches. It extends JavaScript and p5's langugae to make it less forgiving, more emotional, and even painful to write creative programs.
 
-Extremly polite expressions act as intuitive replacements for common JavaScript keywords, operators, and p5's most popular methods. You can continue to use raw JavaScript inside jolang, and the `jolang` transpiler will convert your code into raw JavaScript.
 
 ## Installation
 
