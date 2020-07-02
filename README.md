@@ -64,27 +64,34 @@ jolang requires [python3](https://www.python.org/).
 
 #### Control statements
 
-| jolang | JavaScript |
+| JavaScript | jolang |
 | ----- | ----- |
-| STRAWANZ MA | for |
+| for |  |
 
 #### Operators
 
-| WienerScript | JavaScript |
+| JavaScript | jolang |
 | ----- | ----- |
 | equals exactly | === |
 | equals | == |
 | is | = |
 
-#### Functions
+#### Vanilla Functions
 
-| WienerScript | JavaScript |
+| JavaScript | jolang |
 | ----- | ----- |
-| I MAN JA NUR | console.log |
-| DO IS DA HUND BEGROBN | console.debug |
-| GSCHISSN GRISSN | console.error |
-| DES IS MA ECHT Z'DEPPAT | process.exit |
-| HEAST | alert |
+| console.log |
+| console.debug |
+| console.error |
+
+### P5's Functions
+| JavaScript | jolang |
+| preload() |  |
+| setup() |  |
+| draw() |  |
+| mousePressed() |  |
+| keyPressed() |  |
+
 
 ## License
 This project is licensed under the MIT license, Copyright (c) 2020 Matthias Jäger.
